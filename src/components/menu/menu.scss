@@ -1,0 +1,188 @@
+
+@media only screen and (min-width: 1000px) {
+   .navMenu{
+    .navbarButton{
+        .active{
+                 .buttonX{
+                    .iconAction{
+                        background-color: var(--decor-color);
+                    }
+                 }      
+        }
+        a{
+            text-decoration: none;
+            .buttonX{
+                cursor: pointer;
+                margin: 20px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                border-radius: 36px;
+                font-weight: 700;
+                height: 60px;
+                font-size: 18px;
+                padding-inline: 20px;
+                background-color: transparent;
+                color: var( --text-color);;
+                text-transform: uppercase;
+                overflow: hidden;
+                text-align: center;
+                transition: all .25s ease-in-out;
+                z-index: 1;
+                border: none;
+                .textIcon {
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    visibility: hidden;
+                    opacity: 0;
+                    font-size: 16px;
+                    margin-right: 22px;
+                    -webkit-transition: .2s linear;
+                    transition: .2s linear;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                  }
+                  .iconAction {
+                    display: inherit;
+                    position: absolute;
+                    top: 50%;
+                    color: var(--icon-color);
+                    transform: translateY(-50%);
+                    right: 0;
+                    width: 60px;
+                    height: 60px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    background-color: var(--nav-color);
+                    z-index: 12;
+                  }
+                  .iconAction:hover{
+                    color: white;
+                    background-color: var(--decor-color);
+                  }
+            }
+            .buttonX:hover > .textIcon {
+                visibility: visible;
+                opacity: 1;
+                width: 50%;
+                transition-duration: .3s;
+                padding-right: 25px;
+                padding-left: 10px;
+                z-index: 11;
+            }
+            .buttonX:is(:hover)::before {
+                transform: translateX(0%);
+                height: calc(100% - 2px);
+                width: calc(100% - 2px);
+                border: 1px solid var(--decor-color);
+                border-radius: 36px;
+                z-index: 10;
+                
+            }
+            .buttonX::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color:  var(--decor-color);
+                z-index: 1;
+                left: 15px;
+                transform: translateX(90%);
+                transition: all .3s ease-out;
+            }
+           }
+    }
+   }
+   }
+
+  @media only screen and (max-width: 1000px) {
+   .navMenu{
+    display: flex;
+    justify-content: space-around;
+    .navbarButton{
+        display: flex;
+        a{
+            padding: 0 px;
+            text-decoration: none;
+            .buttonX{
+                cursor: pointer;
+                margin: 10px auto;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                
+                border-radius: 36px;
+                font-weight: 700;
+                height: 54px;
+                font-size: 16px;
+                
+                background-color: transparent;
+                color: var( --icon-color);;
+                text-transform: uppercase;
+                overflow: hidden;
+                text-align: center;
+                transition: all .25s ease-in-out;
+                z-index: 1;
+                border: none;
+                .textIcon {
+                    display: flex;
+                    justify-content: center;
+                    color: white;
+                    visibility: hidden;
+                    opacity: 0;
+                    font-size: 16px;
+                    margin-right: 20px;
+                    -webkit-transition: .2s linear;
+                    transition: .2s linear;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                  }
+                  .iconAction {
+                    display: inherit;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+                    width: 54px;
+                    height: 54px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    background-color:var(--nav-color) ;
+                    z-index: 12;
+                  }
+            }
+            .buttonX::before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: var(--decor-color);
+                z-index: 1;
+                left: -2px;
+                transform: translateX(90%);
+                transition: all .3s ease-out;
+            }
+            .buttonX:active{
+                color:var(--decor-color);
+                transform: translate(2px ,2px);
+               
+            }
+        }
+        .active{
+            .buttonX{
+                  .iconAction {
+                    background-color: var(--decor-color);
+                  }
+            }
+            
+        }
+    }
+   }
+  }
