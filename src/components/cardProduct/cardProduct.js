@@ -3,8 +3,6 @@ import { useState } from "react";
 import ModalProject from "../modalProject/modalProject";
 import "./cardProduct.scss";
 
-import avaPro12 from "../../static/project1/2.png";
-import avaPro123 from "../../static/project1/3.png";
 function CardProduct(props) {
   const { data, ava } = props;
 
@@ -20,7 +18,7 @@ function CardProduct(props) {
             <img src={data.ava} />
           </div>
           <div className="content">
-            <span className="heading">NAME</span>
+            <span className="heading">{data.name}</span>
           </div>
         </div>
       </div>

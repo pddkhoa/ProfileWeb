@@ -22,6 +22,7 @@ function Project() {
   const dataAll = [
     {
       id: 1,
+      name: "Profile",
       ava: avaPro1,
       img: [
         {
@@ -43,6 +44,7 @@ function Project() {
     },
     {
       id: 2,
+      name: "Cart E-comerce",
       ava: imgPro2_1,
       img: [
         {
@@ -61,6 +63,7 @@ function Project() {
     },
     {
       id: 3,
+      name: "Manage Users",
       ava: imgPro3_1,
       img: [
         {
@@ -82,6 +85,7 @@ function Project() {
     },
     {
       id: 4,
+      name: "Manage Video",
       ava: imgPro4_1,
       img: [
         {
@@ -100,6 +104,7 @@ function Project() {
     },
     {
       id: 5,
+      name: "UTE News",
       ava: imgPro5_1,
       img: [
         {
@@ -174,26 +179,26 @@ function Project() {
           <Tab.Content>
             <Tab.Pane eventKey="first">
               <Row className="row-content" xs={2} md={3}>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[0]} />
                 </div>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[1]} />
                 </div>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[2]} />
                 </div>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[3]} />
                 </div>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[4]} />
                 </div>
               </Row>
             </Tab.Pane>
             <Tab.Pane eventKey="second">
               <Row className="row-content" xs={2} md={3}>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[4]} />
                 </div>
               </Row>
@@ -201,10 +206,10 @@ function Project() {
             <Tab.Pane eventKey="third">
               {" "}
               <Row className="row-content" xs={2} md={3}>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[0]} />
                 </div>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[1]} />
                 </div>
               </Row>
@@ -212,10 +217,10 @@ function Project() {
             <Tab.Pane eventKey="four">
               {" "}
               <Row className="row-content" xs={2} md={3}>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[2]} />
                 </div>
-                <div className="cardProduct">
+                <div className="cardProduct mb-3">
                   <CardProduct data={dataAll[3]} />
                 </div>
               </Row>

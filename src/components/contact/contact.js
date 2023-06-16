@@ -5,10 +5,7 @@ function Contact() {
   return (
     <Container className="content-contact">
       <Row className="mt-5">
-        <div
-          style={{ color: "var(--text-color)" }}
-          className="d-flex align-items-center justify-content-center"
-        >
+        <div className="d-flex align-items-center justify-content-center">
           <span className="text-heading">Contact</span>
           <h1>
             <span>get in</span>{" "}
