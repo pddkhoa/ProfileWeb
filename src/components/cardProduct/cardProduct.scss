@@ -4,7 +4,7 @@
         position: relative;
         border-radius: 10px;
         .card{
-            
+            height: 170px;
             border-radius: inherit;
             overflow: hidden;
             
@@ -17,8 +17,9 @@
                     margin: 12px auto;
                     opacity: 1;
                     position: relative;
+                    height: 100%;
                     width: calc(100% - 30px);
-                    height: calc(100% - 30px);
+                    
                     img{
                         width: 100%;
                         height: 100%;
