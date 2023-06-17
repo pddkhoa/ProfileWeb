@@ -20,7 +20,7 @@ function App() {
           <div className="toggle-switch">
             <ReactSwitch
               onChange={toggleTheme}
-              onColor="#cc9900"
+              onColor="#72b626"
               checkedIcon={
                 <i
                   className="fa-solid fa-sun mx-2"
